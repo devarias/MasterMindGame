@@ -88,7 +88,7 @@ Here you can choose to keep playing or exit the game with `CTRL + D`
 ![](https://miro.medium.com/max/700/1*DNF9nIJis_BTJw12xpysxg.jpeg)
 
 ## Bugs
-Don't enter characteres. Only numbers or you will lose a chance.
+There was not found bugs, if you find one, contact to the Authors.
 
 ## Authors
 Vaentina Jaramillo Ramirez - [Github](https://github.com/valen2510) / [Twitter](https://twitter.com/DaftVal)
