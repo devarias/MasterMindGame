@@ -40,25 +40,36 @@ void motor(int chances)
 	length = strlen(number);
 	if (length > 5)
 	{
-		system("clear");
-		title();
-		printBoard();
+		combo();
 		printf("\t\t\t\t\t\t\t\tNo more than four digits\n");
-		free(number);
 		motor(chances);
 	}
 	else if (length < 5)
 	{
-		system("clear");
-		title();
-		printBoard();
+		combo();
 		printf("\t\t\t\t\t\t\t\tNo less than four digits\n");
-		free(number);
 		motor(chances);
 	}
 	else
-		compare(chances, number);
+		if (check_input(number))
+			compare(chances, number);
+		else
+		{
+			combo();
+			printf("\t\t\t\t\t\t\t     Please type only numeric digits\n");
+			motor(chances);
+		}
 	free(number);
+}
+/**
+ * combo - function to clear screen, print the title and the board
+ * Return: void
+ */
+void combo(void)
+{
+	system("clear");
+	title();
+	printBoard();
 }
 /**
  * compare - function to compare the input of the player and the secret Code

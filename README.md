@@ -32,17 +32,17 @@ This project is compiled on Ubuntu 14.04 LTS using C language `gcc compiler vers
 * main - Initialize the Mastermind Game.
 
 
-[functions.c](functions.c) -The functions file contains the side functions to processs the MasterMind Game. 
+[functions.c](functions.c) -The functions file contains the side functions to processs the MasterMind Game.
 * masterMind - Function to display titles and instructions at the start of the game.
 * initializeBoard - Function to initialize the board game.
-* startGame - Function to Start the game with the main loop. 
+* startGame - Function to Start the game with the main loop.
 * congratulations - Function to display a congratulations title when user input matches the secret code.
 
 
 [print_functions.c](print_functions.c) - The print_functions file contains all the messages to display during the game.
 * title - Function to display titles of the MasterGame.
 * instructions - Function to the instructions of the game
-* lose - Function to display the lose message when user loses. 
+* lose - Function to display the lose message when user loses.
 * good_bye - Function to display a good bye message at the end of the game.
 * printBoard - Function to display a the game board at the start.
 
@@ -50,7 +50,7 @@ This project is compiled on Ubuntu 14.04 LTS using C language `gcc compiler vers
 [mastermind.h](mastermind.h) - Header of the mastermind game
 * Libraries - Includes the libraries used.
 * Macros - Define the colors used in the messages.
-* Global Variables - Define the set of global variables used. 
+* Global Variables - Define the set of global variables used.
 * Functions - Describe the functions prototypes of each function in the files.
 
 
@@ -96,4 +96,4 @@ David Arias Fuentes - [Github](https://github.com/devarias) / [Twitter](https://
 
 
 ## License
-Public Domain. No copy write protection.
+Public Domain. No copy rights protection.

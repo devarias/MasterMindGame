@@ -7,6 +7,7 @@
 #include <time.h>
 #include<unistd.h>
 #include <string.h>
+#include <ctype.h>
 
 /*		MACROS		*/
 #define ANSI_COLOR_RED     "\x1b[31m"
@@ -33,6 +34,8 @@ void good_bye(void);
 void initializeBoard(void);
 void startGame(void);
 void motor(int chances);
+int check_input(char *number);
+void combo(void);
 void lose(void);
 void compare(int chances, char *number);
 void congratulations(void);
