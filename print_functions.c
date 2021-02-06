@@ -16,6 +16,7 @@ void title(void)
 	char *title9 = ANSI_COLOR_GREEN "\t\t\t\t\t \\ \\ /\\ / / | | | __| | '_ \\    | '_ \\  | | | | | '_ ` _ \\  | '_ \\   / _ \\ | '__| / __|\n" ANSI_COLOR_RESET;
 	char *title10 = ANSI_COLOR_GREEN "\t\t\t\t\t  \\ V  V /  | | | |_  | | | |   | | | | | |_| | | | | | | | | |_) | |  __/ | |    \\__ \\\n" ANSI_COLOR_RESET;
 	char *title11 = ANSI_COLOR_GREEN "\t\t\t\t\t   \\_/\\_/   |_|  \\__| |_| |_|   |_| |_|  \\__,_| |_| |_| |_| |_.__/   \\___| |_|    |___/" ANSI_COLOR_RESET;
+
 	system("clear");
 	printf("%s%s%s%s%s%s%s%s%s%s%s\n\n\n", title1, title2, title3, title4, title5, title6, title7, title8, title9, title10, title11);
 }
@@ -26,6 +27,7 @@ void title(void)
 void printBoard(void)
 {
 	int i, j;
+
 	printf("\t\t\t\t\t\t\t\t");
 	for (j = 0; j < 4; j++)
 		printf("%c	 ", hiden[j]);
@@ -53,8 +55,9 @@ void printBoard(void)
 void instructions(void)
 {
 	char next;
+
 	printf("\n\n\t\t\t\tHow to play: The computer will select a secret number with four different (unique) digits.\n");
-	puts("\t\t\t\t\t\tThe object of the game is to guess that secret number.");
+	puts("\t\t\t\tThe object of the game is to guess that secret number, it will be composed from 1 to 6\n");
 	puts("\t\t\t\t\t     Each guess is answered by the number of digits in the guess");
 	puts("\t\t\t\tnumber that match or occur in the secret number. You will also be told how many of the digits");
 	puts("\t\t\t\t\t\t    are in the correct position in the secret number.");
@@ -85,6 +88,7 @@ void good_bye(void)
 	char *bye4 = ANSI_COLOR_BLUE "\t\t | (_| | | (_) | | (_) | | (_| |   | |_) | | |_| | |  __/ |_|\n" ANSI_COLOR_RESET;
 	char *bye5 = ANSI_COLOR_BLUE "\t\t  \\__, |  \\___/   \\___/   \\__,_|   |_.__/   \\__, |  \\___| (_)\n" ANSI_COLOR_RESET;
 	char *bye6 = ANSI_COLOR_BLUE "\t\t  |___/                                     |___/            " ANSI_COLOR_RESET;
+
 	system("clear");
 	printf("%s%s%s%s%s%s\n\n\n\n\n", bye1, bye2, bye3, bye4, bye5, bye6);
 	exit(EXIT_SUCCESS);
@@ -103,6 +107,7 @@ void lose(void)
 	char *try6 = ANSI_COLOR_RED "\t\t\t\t                    |___/             |___/                         " ANSI_COLOR_RESET;
 	char next;
 	int i;
+
 	system("clear");
 	printf("%s%s%s%s%s%s\n", try1, try2, try3, try4, try5, try6);
 	printf("\n\t\t\t\t\t\t\tThe Secret Code was ");
